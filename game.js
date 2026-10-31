@@ -392,9 +392,6 @@ const EVENTS = [
   { id: 'house',   y: HOUSE.y + 135, face: 'up',   scene: 'house',   after: () => { S.mailReady = true; burst(MAIL.x, MAIL.y - 40, 30, true, 4); chime(); } },
 ];
 
-/* ============================================================
-   INPUT
-   ============================================================ */
 const keys = {};
 const isDown = (...codes) => codes.some(k => keys[k]);
 addEventListener('keydown', e => {
