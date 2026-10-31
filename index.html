@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>A Little Walk</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="stage">
+    <canvas id="game" width="640" height="420"></canvas>
+
+    
+    <div id="letter" class="hidden">
+      <div id="envelope">
+        <div class="flap"></div>
+        <div class="seal">♥</div>
+      </div>
+      <div id="paper">
+        <button id="closeLetter" aria-label="Close letter">✕</button>
+        <div id="letterBody"></div>
+      </div>
+    </div>
+
+    
+    <canvas id="fx" width="640" height="420"></canvas>
+  </div>
+  <p class="foot">WASD / arrow keys to walk &nbsp;·&nbsp; SPACE to continue &nbsp;·&nbsp; click the mailbox ♥</p>
+
+  <script src="content.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
